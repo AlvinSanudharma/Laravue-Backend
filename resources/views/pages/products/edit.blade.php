@@ -11,7 +11,7 @@
                 @method('PUT')
                 @csrf
                 <div class="form-group">
-                    <label for="name" class="form-control-label">Edit Barang</label>
+                    <label for="name" class="form-control-label">Nama Barang</label>
                     <input type="text" name="name" value="{{ old('name') ? old('name') : $item->name }}" class="form-control @error ('name') is-invalid @enderror"/>
                     @error('name')
                         <div class="text-muted">{{ $message }}</div>
