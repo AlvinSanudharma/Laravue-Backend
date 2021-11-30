@@ -15,9 +15,12 @@
                             <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
                         </a>
 
-                        <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
-                        </div>
+                        <form action="{{ url('logout') }}" method="post">
+                            @csrf
+                            <div class="user-menu dropdown-menu">
+                                <button class="nav-link" style="background: none; border: none; cursor: pointer">Logout</button>
+                            </div>
+                        </form>
                     </div>
 
                 </div>
